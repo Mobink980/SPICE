@@ -1,0 +1,32 @@
+T-Spice - Tanner SPICE
+Version 2019.2
+License validated.
+Product Release ID: T-Spice Win64 2019.2.20190514.20:23:23
+Copyright (C)1988-2019 Mentor, a Siemens Business
+
+Input folder         = C:\Users\Mobin\Desktop\example\
+Output folder        = C:\Users\Mobin\Desktop\example\F_Function
+
+	Parsing "C:\Users\Mobin\Desktop\example\F_Function.spc"
+Fatal Error : "F_Function.spc" line 16 unknown keyword -> .model NMOS
+Fatal Error : Error while parsing.   Will attempt to continue.
+Fatal Error : "F_Function.spc" line 17 unknown keyword -> ****************************************
+Fatal Error : Error while parsing.   Will attempt to continue.
+Warning : No simulation commands found in input file.
+
+Start of F_Function.spc
+Fatal Error : "F_Function.spc" line 21 Could not resolve model "NMOS" referenced by "M1"
+Fatal Error : "F_Function.spc" line 22 Could not resolve model "NMOS" referenced by "M2"
+Fatal Error : "F_Function.spc" line 23 Could not resolve model "NMOS" referenced by "M3"
+Fatal Error : "F_Function.spc" line 24 Could not resolve model "NMOS" referenced by "M4"
+Fatal Error : "F_Function.spc" line 25 Could not resolve model "PMOS" referenced by "M5"
+Fatal Error : "F_Function.spc" line 26 Could not resolve model "PMOS" referenced by "M6"
+Fatal Error : "F_Function.spc" line 27 Could not resolve model "PMOS" referenced by "M7"
+Fatal Error : "F_Function.spc" line 28 Could not resolve model "PMOS" referenced by "M8"
+
+Parsing                      0.04 seconds
+Overhead                     0.57 seconds
+-----------------------------------------
+Total                        0.61 seconds
+
+Simulation failed	with  1 Warning  12 Fatal Errors

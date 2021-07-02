@@ -1,0 +1,161 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: F.sp                                                              
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i F.sp -o C:\Users\Mobin\Desktop\example\F.lis
+  Start time: Wed Jun  2 22:12:39 2021
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   Mobin                HOSTNAME: Mobin-PC 
+  lic: HOSTID: "3c91807d571a"       PID:      7872 
+  lic: Using FLEXlm license file: 
+  lic: 27000@Mobin-PC 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2030.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@Mobin-PC 
+  lic:   
+  **info** (F.sp:33) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ ********************************************************************************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =  58.7016m 0:2       =   1.8000  0:3       =   1.8000 
+ +0:a       =   0.      0:b       =   0.      0:c       =   0.     
+ +0:d       =   0.      0:output  =   1.8000  0:vdd     =   1.8000 
+
+
+ **** voltage sources
+
+ subckt                                                         
+ element  0:va       0:vb       0:vc       0:vd       0:vdd     
+  volts      0.         0.         0.         0.         1.8000 
+  current    0.         0.         0.         0.       -10.6747p
+  power      0.         0.         0.         0.        19.2145p
+
+     total voltage source power dissipation=   19.2145p       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
+ model    0:nmos     0:nmos     0:nmos     0:nmos     0:pmos     0:pmos    
+ region   Cutoff     Cutoff     Cutoff     Cutoff     Linear     Linear    
+  id         3.3612p    1.7961p   -1.7961p   -3.3612p    5.3373p   -5.3373p
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs        0.       -58.7016m   -1.8000   -58.7016m   -1.8000    -1.8000 
+  vds       58.7016m    1.7413    -1.7413   -58.7016m   15.7129n  -15.7129n
+  vbs        0.       -58.7016m   -1.8000   -58.7016m   15.7129n    0.     
+  vth      461.2285m  457.3994m  457.3994m  461.2285m -482.8721m -482.8721m
+  vdsat     38.9342m   39.3379m   39.3379m   38.9342m -930.1969m -930.1969m
+  vod     -461.2285m -516.1010m -516.1010m -461.2285m   -1.3171    -1.3171 
+  beta     786.3774u  783.9574u  783.9574u  786.3774u  401.9844u  401.9844u
+  gam eff  551.6500m  550.3084m  550.3084m  551.6500m  493.9690m  493.9690m
+  gm        90.7517p   48.9830p   48.9830p   90.7517p    1.8511p    1.8511p
+  gds       13.2762p    1.1334p    1.1334p   13.2762p  339.6803u  339.6803u
+  gmb       26.9113p   14.2687p   14.2687p   26.9113p  749.1696f  749.1696f
+  cdtot    685.8347a  608.1385a  685.8348a  691.8371a    1.1735f    1.5329f
+  cgtot    598.3775a  597.1622a  597.1622a  598.3775a    1.5851f    1.5851f
+  cstot    691.8371a  685.8348a  608.1385a  685.8347a    1.5329f    1.1735f
+  cbtot      1.0146f  929.1971a  929.1971a    1.0146f    1.5468f    1.5468f
+  cgs      235.5168a  236.0274a  241.2059a  241.1913a  772.3938a  817.0276a
+  cgd      241.1913a  241.2059a  236.0274a  235.5168a  817.0276a  772.3938a
+
+
+
+ subckt                        
+ element  0:m7       0:m8      
+ model    0:pmos     0:pmos    
+ region   Linear     Linear    
+  id        -5.3373p    5.3373p
+  ibs        0.         0.     
+  ibd        0.         0.     
+  vgs       -1.8000    -1.8000 
+  vds      -15.7129n   15.7129n
+  vbs       15.7129n   31.4257n
+  vth     -482.8721m -482.8721m
+  vdsat   -930.1969m -930.1969m
+  vod       -1.3171    -1.3171 
+  beta     401.9844u  401.9844u
+  gam eff  493.9690m  493.9690m
+  gm         1.8511p    1.8511p
+  gds      339.6803u  339.6803u
+  gmb      749.1697f  749.1697f
+  cdtot      1.5329f    1.1735f
+  cgtot      1.5851f    1.5851f
+  cstot      1.1735f    1.5329f
+  cbtot      1.5468f    1.5468f
+  cgs      817.0276a  772.3938a
+  cgd      772.3938a  817.0276a
+
+
+
+
+          ***** job concluded
+ ******  
+ ********************************************************************************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      10 # elements   =      14
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       8 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          19
+  transient          0.02       10001        1080         426 rev=        27
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         62.04 megabytes
+           total cpu time            0.04 seconds
+           total elapsed time        0.07 seconds
+           job started at     22:12:39 06/02/2021
+           job ended   at     22:12:39 06/02/2021
+           job total runtime         0.07 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.03(s)

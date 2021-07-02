@@ -1,0 +1,42 @@
+T-Spice - Tanner SPICE
+Version 2019.2
+License validated.
+Product Release ID: T-Spice Win64 2019.2.20190514.20:23:23
+Copyright (C)1988-2019 Mentor, a Siemens Business
+
+Input folder         = C:\Users\Mobin\Desktop\example\
+Output folder        = C:\Users\Mobin\Desktop\example\NOT
+
+	Parsing "C:\Users\Mobin\Desktop\example\NOT.spc"
+	Including "C:\Users\Mobin\Desktop\example\mosistsmc180.lib"
+
+Start of NOT.spc
+Loaded BSIM3v31 model library, Berkeley BSIM3 v3.1.0 with extensions
+Warning : "NOT.spc" line 26 Power supply node A0 is singularly attached to VIN, and will be terminated with a Gmin conductance
+Warning : Node IN is only attached to FET gate terminals; voltage is undefined
+
+General options:
+        threads = 1
+
+ Device and node counts:
+              MOSFETs -       2
+    MOSFET geometries -       2
+      Voltage sources -       2
+   Subckt Definitions -       1
+     Subckt Instances -       0
+    Model Definitions -       2
+      Computed Models -       2
+    Independent nodes -       3
+       Boundary nodes -       3
+          Total nodes -       6
+*** 2 WARNING MESSAGES GENERATED DURING SETUP
+
+
+	Opening simulation database "C:\Users\Mobin\Desktop\example\NOT.tsim"
+
+Setup                        0.03 seconds
+Overhead                     1.37 seconds
+-----------------------------------------
+Total                        1.42 seconds
+
+Simulation completed	with  2 Warnings

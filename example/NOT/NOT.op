@@ -1,0 +1,71 @@
+
+DC ANALYSIS: temperature=25.0
+
+v(A0) =    0.0000e+00
+v(GND_) =    1.8000e+00
+v(IN) =    4.3195e+00
+v(OUTPUT) =    1.8000e+00
+v(Vdd) =    1.8000e+00
+i1(M1) =    0.0000e+00
+i2(M1) =    0.0000e+00
+i3(M1) =    0.0000e+00
+i4(M1) =    0.0000e+00
+i1(M2) =    0.0000e+00
+i2(M2) =    0.0000e+00
+i3(M2) =    0.0000e+00
+i4(M2) =    0.0000e+00
+i1(VDD) =    0.0000e+00
+i2(VDD) =    0.0000e+00
+i1(VIN) =    0.0000e+00
+i2(VIN) =    0.0000e+00
+
+
+AC SMALL-SIGNAL MODELS: temperature=25.0
+
+
+                  0                 1              
+                  M1                M2               
+MODEL             NMOS              PMOS             
+TYPE              NMOS              PMOS             
+REGION            Linear            Cutoff           
+ID                   0.                 0.           
+IBS                  0.                 0.           
+IBD                  0.                 0.           
+VGS                  2.5195             2.5195       
+VDS                  0.                 0.           
+VBS                  0.                 0.           
+VTH                452.3238m         -441.0647m      
+VDSAT                1.2894           -34.9057m      
+BETA               618.2396u          250.6985u      
+RS                   0.                 0.           
+RD                   0.                 0.           
+GM                   0.                 0.           
+GDS                  1.0998m            0.           
+GMB                  0.                 0.           
+GBD                  0.                 0.           
+GBS                  0.                 0.           
+CDTOT               14.7220f           11.4076f      
+CGTOT               10.8798f           10.3253f      
+CSTOT               10.1340f            8.4472f      
+CBTOT               19.4736f           25.3685f      
+CGS                  5.4990f            1.2835f      
+CGD                  5.3300f            1.1760f      
+CGB                 50.8007a            7.8658f      
+CBD                  9.4054f           10.2316f      
+CBS                  7.4213f            7.2711f      
+
+
+* VOLTAGE SOURCES
+
+                  2                 3              
+                  VDD               VIN              
+VOLTAGE              1.8000             0.           
+CURRENT              0.                 0.           
+POWER                0.                 0.           
+
+
+Element name cross-reference:
+      0 : M1
+      1 : M2
+      2 : VDD
+      3 : VIN

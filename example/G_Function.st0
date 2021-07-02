@@ -1,0 +1,56 @@
+****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******
+Input File: G_Function.sp
+lic:
+lic: FLEXlm: SDK_12.3
+lic: USER:   Mobin                HOSTNAME: Mobin-PC
+lic: HOSTID: "3c91807d571a"       PID:      17532
+lic: Using FLEXlm license file:
+lic: 27000@Mobin-PC
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2030/2030.12
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@Mobin-PC
+lic:
+
+ init: begin read circuit files, cpu clock= 3.90E-02
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/behave/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/AD/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/XILINX/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TLINE/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/TI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/SIGNET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PCI/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/LIN_TEC
+                         H/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/PET/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/DI0/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/COMLINE
+                         /
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BURR_BR
+                         M/
+       option search = C:/synopsys/Hspice_P-2019.06-SP1-1/parts/BJT/
+       option post =     2.00
+       option nomod
+ init: end read circuit files, cpu clock= 4.20E-02 peak memory=      62 mb
+ init: begin check errors, cpu clock= 4.20E-02
+ init: end check errors, cpu clock= 4.40E-02 peak memory=      62 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 4.40E-02
+       establish matrix -- done, cpu clock= 4.40E-02 peak memory=      62 mb
+       re-order matrix -- done, cpu clock= 4.50E-02 peak memory=      62 mb
+ init: end setup matrix, cpu clock= 4.50E-02 peak memory=      62 mb
+ dcop: begin dcop, cpu clock= 4.50E-02
+ dcop: end dcop, cpu clock= 4.70E-02 peak memory=      62 mb tot_iter=      14
+ output: C:\Users\Mobin\Desktop\example\G_Function.tr0
+ sweep: tran tran0    begin, stop_t=  1.20E-07 #sweeps=6001 cpu clock= 4.70E-02
+ tran: time= 1.2091E-08 tot_iter=      65 conv_iter=      26 cpu clock= 4.90E-02
+ tran: time= 2.4381E-08 tot_iter=     199 conv_iter=      79 cpu clock= 5.30E-02
+ tran: time= 3.6013E-08 tot_iter=     366 conv_iter=     144 cpu clock= 6.00E-02
+ tran: time= 4.9421E-08 tot_iter=     470 conv_iter=     183 cpu clock= 6.20E-02
+ tran: time= 6.0000E-08 tot_iter=     584 conv_iter=     227 cpu clock= 6.40E-02
+ tran: time= 7.2430E-08 tot_iter=     730 conv_iter=     284 cpu clock= 6.70E-02
+ tran: time= 8.4321E-08 tot_iter=     808 conv_iter=     313 cpu clock= 6.90E-02
+ tran: time= 9.6304E-08 tot_iter=     984 conv_iter=     379 cpu clock= 7.30E-02
+ tran: time= 1.0807E-07 tot_iter=    1114 conv_iter=     430 cpu clock= 7.60E-02
+ tran: time= 1.2000E-07 tot_iter=    1209 conv_iter=     470 cpu clock= 7.80E-02
+ sweep: tran tran0    end, cpu clock= 7.80E-02 peak memory=      62 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
